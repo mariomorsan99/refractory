@@ -1,0 +1,64 @@
+
+<div #Principal> 
+    <div class="row" style="padding-left: 10px;">
+        <div class="col-sm-8">
+          <div #drag1 class="example-box" cdkDrag> CL1 </div> 
+        </div>
+      </div>
+      <div class="row" style="padding-left: 10px;">
+        <div class="col-sm">
+          <div #drag2 class="example-box" cdkDrag> CL2 </div> 
+        </div>
+      </div>
+      <div class="row" style="padding-left: 10px;">
+        <div class="col-sm">
+          <div #drag3 class="example-box" cdkDrag> CL3 </div> 
+        </div>
+      </div>
+      <div class="row" style="padding-left: 10px;">
+        <div class="col-sm">
+          <div #drag4 class="example-box" cdkDrag> CL4 </div> 
+        </div>
+      </div>
+      <div class="row" style="padding-left: 10px;">
+        <div class="col-sm">
+          <div #drag5 class="example-box" cdkDrag> CL5 </div> 
+        </div>
+      </div>    
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <img src="../assets/image/caldery.PNG">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="row" style="padding-left: 10px;">
+    <div class="col-sm-8">
+      <button #button1 type="button" (click)="GetValues()" class="btn btn-primary">GetValues</button>
+    </div>
+  </div>
+<br>
+<br>
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">Name Config</th>
+        <th scope="col">Config X</th>
+        <th scope="col">Config Y</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of refractorys">
+      <tr>
+        <th scope="row">1</th>
+        <td>{{item.id}}</td>
+        <td>{{item.configX}}</td>
+        <td>{{item.configY}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,24 @@
+<ejs-diagram #diagram width="100%" height="700px" >
+    <e-nodes>
+       <e-node id='node_1' [offsetY]=100 [offsetX]=200 [shape]="process">
+         <e-node-annotations>
+             <e-node-annotation content='Panel'>
+             </e-node-annotation>
+         </e-node-annotations>
+      </e-node>
+      <e-node #node10 id='node10'  [offsetY]=160 [offsetX]=100  [shape]='directdata'>
+       <e-node-annotations>
+           <e-node-annotation #anotation10 content='CL1' >
+           </e-node-annotation>
+       </e-node-annotations>
+     </e-node>
+     <e-node id='node3'  [offsetY]=160 [offsetX]=500 rotateAngle="90" style="fill: #6BA5D7;" [shape]='directdata'>
+       <e-node-annotations>
+         <e-node-annotation content='CL1' >
+         </e-node-annotation>
+     </e-node-annotations>
+     </e-node>
+   </e-nodes>
+ </ejs-diagram>
+
+ <button #button1 type="button" (click)="GetValues()" class="btn btn-primary">GetValues</button>
