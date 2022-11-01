@@ -11,7 +11,7 @@ export class SyncComponent implements OnInit {
   public terminatorShape: FlowShapeModel = { type:'Flow', shape:'Terminator'};
   public directdata: FlowShapeModel = { type: 'Flow', shape: 'DirectData' };
   public process: FlowShapeModel = { type: 'Flow', shape: 'Process' };
-  @ViewChild("node10") node1: ElementRef | undefined;
+  @ViewChild("diagram") node1: ElementRef | undefined;
   
   constructor() { }
 
@@ -19,7 +19,7 @@ export class SyncComponent implements OnInit {
   }
 
   public GetValues() { 
-    console.log(this.node1?.nativeElement.getBoundingClientRect()) 
+    console.log(this.node1) 
   }
 
 }
