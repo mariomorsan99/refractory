@@ -1,6 +1,6 @@
 
 <div #Principal> 
-    <div class="row" style="padding-left: 10px;">
+    <div class="row" style="padding-left: 10px;" >
         <div class="col-sm-8">
           <div #drag1 class="example-box" cdkDrag> CL1 </div> 
         </div>
@@ -28,11 +28,11 @@
 </div>
 
   <div class="container">
-    <div class="row">
+    <div #imagen class="row" (cdkDropListDropped)="drop($event)" (onmousemove)="showCoords($event)" (click)="showCoords($event)">
       <div class="col-sm">
         <img src="../assets/image/caldery.PNG">
       </div>
-    </div>
+    </div>  
   </div>
 
   <br>
